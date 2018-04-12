@@ -6,7 +6,7 @@ set -x
 for i in MCC-INPUTS.tgz ;
 do 
     if [ ! -f $i ] ; then 
-	wget --progress=dot:mega http://mcc.lip6.fr/archives/$i
+	wget --progress=dot:mega http://mcc.lip6.fr/2017/archives/$i
     fi
     tar xzf $i
     rm -f $i
